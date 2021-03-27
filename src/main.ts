@@ -3,8 +3,10 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify';
+import { setupAxios } from './setup-axios';
 import { setupFirebase } from './setup-firebase';
 
+setupAxios();
 setupFirebase();
 
 Vue.config.productionTip = false
